@@ -1,0 +1,16 @@
+*.pyc
+*~
+__pycache__
+myvenv
+venv
+db.sqlite3
+/media
+/static
+/other_stuff
+.DS_Store
+tut.txt
+*.env
+.env
+tut
+tut.*
+README.md
