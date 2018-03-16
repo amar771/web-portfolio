@@ -124,6 +124,65 @@ a.link:active {
     font-size: 3em;
 }
 
+/* Start of classes in article */
+
+.mid-section {
+    background-color: grey;
+}
+
+.top-text {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.top-text-skills {
+    margin: 0;
+    font-size: 6em;
+    -webkit-text-fill-color: gray;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+/* Skill boxes done in grid */
+.skills-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". skill skill skill ."
+        ". skill skill skill .";
+    grid-gap: 3em;
+    height: auto;
+    border: 1px solid hotpink;
+}
+
+/* Each box contains an image/icon; 
+h3 text with title and p with description*/
+.skill-box {
+    grid-area: skill;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid green;
+}
+
+.skill-image {
+    color: white;
+    align-self: flex-start;
+    justify-content: center;
+    font-size: 100%;
+}
+
+.skill-title {
+    align-self: flex-start;
+}
+
+.skill-description {
+    align-self: flex-end;
+}
+
 @media only screen and (max-width: 768px) {
     .md-page-link {
         font-size: 2em;
