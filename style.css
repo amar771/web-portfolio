@@ -145,6 +145,7 @@ a.link:active {
     height: auto;
     margin-left: 20vw;
     margin-right: 20vw;
+    margin-bottom: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 3em;
