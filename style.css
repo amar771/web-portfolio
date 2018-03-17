@@ -205,12 +205,11 @@ h3 text with title and p with description*/
 /* About Me section */
 .about-me {
     background-color: #D0D0D1;
-    padding-top: 5vh;
 }
 
 .mid-text {
-    padding-top: 20vh;
-    margin-bottom: 5vh;
+    padding-top: 7vh;
+    padding-bottom: 3vh;
 }
 
 .mid-text-about-me {
