@@ -137,7 +137,6 @@ a.link:active {
     margin: 0;
     font-size: 6em;
     -webkit-text-fill-color: #0E1116;
-
 }
 
 /* Skill boxes done in grid */
@@ -201,6 +200,23 @@ h3 text with title and p with description*/
     font-weight: 500;
     text-align: center;
     -webkit-text-fill-color: #A7A8AA;
+}
+
+/* About Me section */
+.about-me {
+    background-color: #D0D0D1;
+    padding-top: 5vh;
+}
+
+.mid-text {
+    padding-top: 20vh;
+    margin-bottom: 5vh;
+}
+
+.mid-text-about-me {
+    margin: 0;
+    font-size: 6em;
+    -webkit-text-fill-color: #0E1116;
 }
 
 @media only screen and (max-width: 1300px) {
