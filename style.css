@@ -202,6 +202,7 @@ h3 text with title and p with description*/
     -webkit-text-fill-color: #A7A8AA;
 }
 
+
 /* Center image */
 .center-image-container {
     padding: 0;
@@ -240,6 +241,7 @@ h3 text with title and p with description*/
 .profile-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
     grid-gap: 5em;
     margin-left: 30vw;
     margin-right: 30vw;
@@ -263,6 +265,31 @@ h3 text with title and p with description*/
     text-align: center;
     -webkit-text-fill-color: black;
     text-align: left;
+}
+
+.skill-list-flex {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.skill-item {
+    margin: 1%;
+    border: 1px solid black;
+    font-size: 2em;
+    -webkit-text-fill-color: #FEFEFF;
+    background-color: #181818 ;
+    border-radius: 7%;
+    padding: 1.5%;
+}
+
+.skill-item:hover {
+    -webkit-text-fill-color: #181818;
+    background-color: #FEFEFF;
 }
 
 /* Contact Form */
@@ -427,8 +454,14 @@ h3 text with title and p with description*/
     .profile-container {
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         margin-left: 25vw;
         margin-right: 25vw;
+    }
+
+    .skill-list-flex {
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 
     .profile-description {
