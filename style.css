@@ -343,6 +343,7 @@ h3 text with title and p with description*/
     font-size: 1.5em;
 }
 
+
 .textarea-input {
     background: transparent;
     border: 0;
@@ -350,10 +351,22 @@ h3 text with title and p with description*/
     font-size: 1.5em;
 }
 
+.text-input:focus, .textarea-input:focus {
+    outline: none;
+    border-bottom: 2px solid #FEFEFF;
+}
+
 .btn {
     border: 0;
     font-size: 2em;
+    font-weight: 200;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
 
+.btn:hover {
+    background-color: black;
+    -webkit-text-fill-color: #FEFEFF;
 }
 
 @media only screen and (max-width: 1600px) {
