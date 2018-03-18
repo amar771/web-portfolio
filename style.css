@@ -290,6 +290,25 @@ h3 text with title and p with description*/
     -webkit-text-fill-color: #FEFEFF;
 }
 
+.text-input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 1.5em;
+}
+
+.textarea-input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 1.5em;
+}
+
+.btn {
+    border: 0;
+    font-size: 2em;
+}
+
 @media only screen and (max-width: 1600px) {
     .profile-container {
         margin-left: 27vw;
