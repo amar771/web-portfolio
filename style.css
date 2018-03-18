@@ -224,6 +224,7 @@ h3 text with title and p with description*/
     grid-gap: 5em;
     margin-left: 30vw;
     margin-right: 30vw;
+    padding-bottom: 5vh;
 }
 
 .profile-image {
@@ -245,10 +246,43 @@ h3 text with title and p with description*/
     text-align: left;
 }
 
+/* Contact Form */
+.bottom-section {
+    background-color: #A2A2A3;
+}
+
+.contact-text {
+    padding-top: 7vh;
+    padding-bottom: 3vh;
+}
+
+.contact-title {
+    margin: 0;
+    font-size: 6em;
+    -webkit-text-fill-color: #0E1116;
+}
+
+.contact-container {
+    padding-bottom: 3vw;
+}
+
+.contact-me {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-gap: 1em;
+    margin-left: 35vw;
+    margin-right: 35vw;
+}
+
 @media only screen and (max-width: 1600px) {
     .profile-container {
         margin-left: 27vw;
         margin-right: 27vw;
+    }
+
+    .contact-me {
+        margin-left: 30vw;
+        margin-right: 30vw;
     }
 } 
 
@@ -256,6 +290,11 @@ h3 text with title and p with description*/
     .profile-container {
         margin-left: 25vw;
         margin-right: 25vw;
+    }
+
+    .contact-me {
+        margin-left: 27vw;
+        margin-right: 27vw;
     }
 }
 
@@ -270,6 +309,11 @@ h3 text with title and p with description*/
         margin-left: 20vw;
         margin-right: 20vw;
     }
+
+    .contact-me {
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -282,6 +326,11 @@ h3 text with title and p with description*/
     .profile-container {
         margin-left: 17vw;
         margin-right: 17vw;
+    }
+
+    .contact-me {
+        margin-left: 22vw;
+        margin-right: 22vw;
     }
 }
 
@@ -297,6 +346,11 @@ h3 text with title and p with description*/
     .profile-container {
         margin-left: 14vw;
         margin-right: 14vw;
+    }
+
+    .contact-me {
+        margin-left: 20vw;
+        margin-right: 20vw;
     }
 }
 
@@ -324,6 +378,11 @@ h3 text with title and p with description*/
 
     .profile-description {
         text-align: center;
+    }
+
+    .contact-me {
+        margin-left: 17vw;
+        margin-right: 17vw;
     }
 }
 
@@ -361,5 +420,10 @@ h3 text with title and p with description*/
 
     .profile-description {
         text-align: center;
+    }
+
+    .contact-me {
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 }
