@@ -202,12 +202,31 @@ h3 text with title and p with description*/
     -webkit-text-fill-color: #A7A8AA;
 }
 
+/* Center image */
+.center-image-container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.center-image-parallax {
+    background-image: url("./3.jpg");
+    background-size: 100%;
+    height: 50vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* About Me section */
 .about-me {
     background-color: #D0D0D1;
 }
 
 .mid-text {
+    margin-top: 0;
     padding-top: 7vh;
     padding-bottom: 3vh;
 }
@@ -307,6 +326,7 @@ h3 text with title and p with description*/
 .btn {
     border: 0;
     font-size: 2em;
+
 }
 
 @media only screen and (max-width: 1600px) {
