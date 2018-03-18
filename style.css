@@ -272,6 +272,22 @@ h3 text with title and p with description*/
     grid-gap: 1em;
     margin-left: 35vw;
     margin-right: 35vw;
+    padding-bottom: 3vw;
+}
+
+.copyright-footer {
+    background-color: #181818;
+}
+
+.copyright-text {
+    padding-top: 7vh;
+    padding-bottom: 3vh;
+}
+
+.copyright-title {
+    margin: 0;
+    font-size: 2em;
+    -webkit-text-fill-color: #FEFEFF;
 }
 
 @media only screen and (max-width: 1600px) {
