@@ -36,6 +36,23 @@ body {
 
 }
 
+label {
+    display: none;
+    font-size: 2em;
+    -webkit-text-fill-color: #FEFEFF;
+}
+
+#toggle {
+    display: none;
+}
+
+#burger-button {
+    padding-top: 4%;
+    grid-area: main-nav;
+    align-self: start;
+    justify-self: center;
+}
+
 .top-image {
     background-image: url("./2.jpg");
 }
@@ -66,7 +83,7 @@ a.link:active {
 
 .md-page-link {
     margin: 2%;
-    font-size: 1.5em;
+    font-size: 2em;
     font-color: white;
 }
 
@@ -356,7 +373,7 @@ h3 text with title and p with description*/
     border-bottom: 2px solid #FEFEFF;
 }
 
-.btn {
+.submit-btn {
     border: 0;
     font-size: 2em;
     font-weight: 200;
@@ -364,7 +381,7 @@ h3 text with title and p with description*/
     padding-bottom: 1%;
 }
 
-.btn:hover {
+.submit-btn:hover {
     background-color: black;
     -webkit-text-fill-color: #FEFEFF;
 }
@@ -488,8 +505,52 @@ h3 text with title and p with description*/
 }
 
 @media only screen and (max-width: 768px) {
+
+    .main-container-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "main-nav"
+            "."
+            "main-name"
+            "main-desc"
+            "."
+            "main-links";
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .main-navigation-con {
+        display: none;
+    }
+
+    #toggle:checked + .main-navigation-con {
+        display: block;
+    }
+
+    #burger-button {
+        justify-self: end;
+        margin-right: 10vw;
+        font-size: 3em;
+    }
+
+
+    .top-page-links-flex {
+        display: block;
+    }
+
+    .main-navigation {
+        text-align: center;
+        width: 100%;
+    }
+
     .md-page-link {
-        font-size: 2em;
+        font-size: 2.5em;
+        margin-bottom: 10px;
     }
 
     .main-name {
@@ -526,5 +587,12 @@ h3 text with title and p with description*/
     .contact-me {
         margin-left: 10vw;
         margin-right: 10vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main-name {
+        font-size: 4em;
+        -webkit-text-stroke-width: 1px;
     }
 }
