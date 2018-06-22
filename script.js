@@ -39,7 +39,39 @@ function save_contact() {
   }
 
   sessionStorage.setItem(sessionStorage.length, JSON.stringify(json_data));
-  //console.log(JSON.parse(sessionStorage.getItem(0)));
+}
+
+// Logs message to session on every keystroke
+function log_message() {
+  console.log("1")
+  if (sessionStorage.length > 0) {
+    json_data = JSON.parse(sessionStorage.getItem(0));
+
+    new_message = document.getElementById("message").value;
+    json_data.message = new_message;
+    sessionStorage.clear();
+    sessionStorage.setItem(sessionStorage.length, JSON.stringify(json_data));
+  }
+}
+
+// Load contact details on load, for accident refreshes
+function load_contact() {
+  if (sessionStorage.length > 0) {
+    json_data = JSON.parse(sessionStorage.getItem(0));
+
+    if (json_data.name) {
+      document.getElementById("name").value = json_data.name;
+    }
+    if (json_data.email) {
+      document.getElementById("email").value = json_data.email;
+    }
+    if (json_data.subject) {
+      document.getElementById("subject").value = json_data.subject;
+    }
+    if (json_data.message) {
+      document.getElementById("message").value = json_data.message;
+    }
+  }
 }
 
 $().ready(()=>{
