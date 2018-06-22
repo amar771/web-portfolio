@@ -7,6 +7,9 @@ function lower_menu() {
 }
 
 function save_contact() {
+  if (sessionStorage.length > 0) {
+    sessionStorage.clear();
+  }
   // Gets all the data from form
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
@@ -35,5 +38,50 @@ function save_contact() {
     json_data.message = message;
   }
 
-  console.log(json_data);
+  sessionStorage.setItem(sessionStorage.length, JSON.stringify(json_data));
+  //console.log(JSON.parse(sessionStorage.getItem(0)));
 }
+
+$().ready(()=>{
+  $("#contactForm").validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 3
+      },
+      email: {
+        required: true,
+        email_validation: true
+      },
+      subject: {
+        required: true,
+        minlength: 5,
+        maxlength: 120
+      },
+      message: {
+        required: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Name is required.",
+        minlength: "Minimum length of name is 3 characters."
+      },
+      email: {
+        required: "Email is required.",
+      },
+      subject: {
+        required: "Subject is required.",
+        minlength: "Minimum length of subject is 3 characters.",
+        maxlength: "Maximum length of subject is 120 characters."
+      },
+      message: {
+        required: "Message is required."
+      }
+    }
+  });
+
+  $.validator.addMethod("email_validation", (value, element)=>{
+    return /\\*@\\*.\\*/.test(value);
+  }, "Email is not valid.");
+})
