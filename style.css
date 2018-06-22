@@ -344,7 +344,7 @@ h3 text with title and p with description*/
 
 .copyright-text {
     padding-top: 7vh;
-    padding-bottom: 3vh;
+    padding-bottom: 7vh;
 }
 
 .copyright-title {
@@ -357,7 +357,7 @@ h3 text with title and p with description*/
     background: transparent;
     border: 0;
     border-bottom: 1px solid black;
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 
@@ -365,7 +365,7 @@ h3 text with title and p with description*/
     background: transparent;
     border: 0;
     border-bottom: 1px solid black;
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 .text-input:focus, .textarea-input:focus {
