@@ -17,6 +17,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- First page -->
@@ -30,16 +31,16 @@
           <nav class="main-navigation">
             <ul class="top-page-links-flex">
               <li class="md-page-link">
-                <a href="#home" class="link">Home</a>
+                <a href="#home" class="link" onclick="lower_menu()">Home</a>
               </li>
               <li class="md-page-link">
-                <a href="#skills" class="link">Skills</a>
+                <a href="#skills" class="link" onclick="lower_menu()">Skills</a>
               </li>
               <li class="md-page-link">
-                <a href="#about" class="link">About</a>
+                <a href="#about" class="link" onclick="lower_menu()">About</a>
               </li>
               <li class="md-page-link">
-                <a href="#contact" class="link">Contact</a>
+                <a href="#contact" class="link" onclick="lower_menu()">Contact</a>
               </li>
             </ul>
           </nav>
@@ -164,10 +165,9 @@
 
       <div class="contact-container">
         <form method="POST" class="contact-me">
-          <input class="text-input" type="text" id="name" name="name" placeholder="Name*" required>
-
-          <input class="text-input" type="email" id="email" name="email" placeholder="Email*" required>
-          <input class="text-input" type="text" id="subject" name="subject" placeholder="Subject*">
+          <input class="text-input" type="text" id="name" name="name" placeholder="Name*" required onfocus="save_contact()">
+          <input class="text-input" type="email" id="email" name="email" placeholder="Email*" required onfocus="save_contact()">
+          <input class="text-input" type="text" id="subject" name="subject" placeholder="Subject*" onfocus="save_contact()">
           <textarea class="textarea-input" name="message" id="message" cols="10" rows="10" placeholder="Message*"></textarea>
           <button type="submit" class="submit-btn">Send</button>
         </form>
