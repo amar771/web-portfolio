@@ -43,13 +43,23 @@ function save_contact() {
 
 // Logs message to session on every keystroke
 function log_message() {
-  console.log("1")
   if (sessionStorage.length > 0) {
     json_data = JSON.parse(sessionStorage.getItem(0));
 
     new_message = document.getElementById("message").value;
     json_data.message = new_message;
     sessionStorage.clear();
+    sessionStorage.setItem(sessionStorage.length, JSON.stringify(json_data));
+  }
+  else {
+    let json_data = {
+      "name": "",
+      "email": "",
+      "subject": "",
+      "message": ""
+    }
+    message = document.getElementById("message").value;
+    json_data.message = message;
     sessionStorage.setItem(sessionStorage.length, JSON.stringify(json_data));
   }
 }
